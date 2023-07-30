@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting visualizer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header id="header">
+        <div id="Main_Heading">
+            <h1>Comparision Sorting Algorithm</h1>
+        </div>
+        <div class="navbar_buttons">
+            <button type="button">Randomize Array</button>
+            <button type="button">Insertion Sort</button>
+            <button type="button">Bubble Sort</button>
+            <button type="button">Selection Sort</button>
+            <button type="button">Merge Sort</button>
+            <button type="button">Quick Sort</button>
+            <button type="button">Shell Sort</button>
+            <button type="button">Change Size</button>
+        </div>
+    </header>
+    <main>
+        <canvas id="animation" width="1000" height="320"></canvas>
+    </main>
+    <footer>
+        <div class="fottor_buttons">
+            <button type="button" class="button">Skip Back</button>
+            <button type="button" class="button">Step Back</button>
+            <button type="button" class="button">Pause</button>
+            <button type="button" class="button">Step Forward</button>
+            <button type="button" class="button">Skip Forward</button>
+            <span class="animation_speed" class="button">
+                <input type="range" name="Animation Speed" class="slider" min="1" max="100" value="50">
+                <b>
+                    <label for="speed" id="label_speed">Animation Speed</label>
+                </b>
+            </span>
+            <label for="W" class="button">W:</label>
+            <input type="text" name="W" class="WH" class="button">
+            <label for="H" class="button">H:</label>
+            <input type="text" name="H" class="WH" class="button">
+            <button type="button" class="button">Change Canvas Size</button>
+            <button type="button" class="button">Move Controls</button>
+        </div>
+        <div id="last_heading">
+            <h3>Algorithm Visualizations</h3>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="index.js"></script>
+
+</body>
+
+</html>
